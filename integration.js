@@ -55,33 +55,17 @@ function doLookup(entities, options, cb) {
 
 function _lookupIPv4(entity, apiKey, uri, done) {
 
-    // TODO: Fix this. Might need a new endpoint for it.
-    let ports = [
-        {"port": 80, "protocol": "tcp"},
-        {"port": 8080, "protocol": "tcp"},
-        {"port": 443, "protocol": "tcp"},
-        {"port": 22, "protocol": "tcp"},
-        {"port": 23, "protocol": "tcp"}
-    ]
-
-    // List of ip addresses to query.
-    let ips = [
-    ]
-
-    ips.push(entity.value)
-
     // Build the query object
-    let scans = {
-        "ports": ports,
-        "ips": ips
+    let myip = {
+        "ip": entity.value
     }
 
     // Build the query
     let req = {
-                url: uri + '/reducer/seen', 
-                body: JSON.stringify(scans), 
+                url: uri + '/reducer/ipinfo', 
+                body: JSON.stringify(myip), 
                 headers: {
-                    'XAPIKEY_HEADER': apiKey
+                    'x-api-key': apiKey
                 }
             }
 

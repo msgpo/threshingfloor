@@ -11,6 +11,10 @@ let entities = [
     {
         value: '1.0.120.144',
         isIPv4: true
+    },
+    {
+        value: '8.8.8.8',
+        isIPv4: true
     }
 ];
 
