@@ -11,6 +11,8 @@
     padding: 5px;
     border-radius: 5px;
     font-size: 12px;
+    display: inline-block;
+    margin-bottom: 6px;
 }
 
 .tag {
@@ -19,6 +21,8 @@
     padding: 5px;
     border-radius: 5px;
     font-size: 12px;
+    display: inline-block;
+    margin-bottom: 6px;
 }
 
 .heading {
