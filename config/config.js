@@ -19,6 +19,9 @@ module.exports = {
         }
     ],
     "block": {
+        "component": {
+            "file": "./component/threshingfloor.js"
+        },
         "template": {
             "file": "./templates/ipinfo.hbs"
         }
