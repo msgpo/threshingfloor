@@ -83,8 +83,11 @@ function _lookupIPv4(entity, apiKey, uri, done) {
 
         // Make sure we have a response
         if(my_body.ports.length < 1 && my_body.tags.length < 1) {
-            // We don't have anything
-            done("No results." || body)
+            // We don't have anything, return nothing
+            done(null, {
+                entity: entity,
+                data: null
+            })
             return;
         }
 
