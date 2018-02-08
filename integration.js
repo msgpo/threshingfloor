@@ -77,13 +77,23 @@ function _lookupIPv4(entity, apiKey, uri, done) {
             done(err || body);
             return;
         }
-    
+
+        // Need to check for responses    
+        let my_body = JSON.parse(body)
+
+        // Make sure we have a response
+        if(my_body.ports.length < 1 && my_body.tags.length < 1) {
+            // We don't have anything
+            done("No results." || body)
+            return;
+        }
+
         // there was no error in making the GET request so process the body here
         done(null, {
             entity: entity,
             data:{
                 summary: [entity.value],
-                details: body
+                details: JSON.parse(body)
             }
         });
     });
