@@ -1,0 +1,20 @@
+<div class='container'>
+    <h3 class='heading'>{{block.data.details.ip}}</h3>
+    This IP address is known to have internet-wide scanning activity.
+
+    <h3>Ports Scanned</h3>
+    <div>
+        {{#each block.data.details.ports}}
+            <span class='port'>{{this.protocol}} {{this.port}}</span>
+        {{/each}}
+    </div>
+    
+    <h3>Associated Tags</h3>
+    <div>
+        {{#each block.data.details.tags}}
+            <span class='tag'>{{this}}</span>
+        {{/each}}
+    </div>
+
+    <div class="footer">For more information, visit <a href="https://threshingfloor.io/{{block.data.details.ip}}">https://threshingfloor.io/{{block.data.details.ip}}</a></div>
+</div>

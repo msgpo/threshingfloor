@@ -17,5 +17,8 @@ module.exports = {
             "description": "The location of the ThreshingFloor API used by your organization.",
             "adminOnly": true
         }
+    ],
+    "styles": [
+        "./styles/style.css"
     ]
 };

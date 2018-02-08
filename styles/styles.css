@@ -1,0 +1,36 @@
+.container {
+    background-color: #bdbdbdff;
+    color: #434343;
+    font-family: Ubuntu, Arial;
+    padding: 4px;
+}
+
+.port {
+    margin-right: 8;
+    background-color: #d81b60;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.tag {
+    margin-right: 8;
+    background-color: #d81b60;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.heading {
+    margin-top: 2px;
+}
+
+.footer {
+    padding: 8px 0px;
+}
+
+a {
+    color: #d81b60;
+    font-weight: bold;
+    text-decoration-color: white;
+}
