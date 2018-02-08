@@ -120,5 +120,7 @@ function startup(logger) {
 }
 
 module.exports = {
-    doLookup: doLookup
+    doLookup: doLookup,
+    startup: startup,
+    validateOptions: validateOptions
 };

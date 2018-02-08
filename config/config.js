@@ -27,6 +27,6 @@ module.exports = {
         }
     },
     "styles": [
-        "./styles/style.less"
+        "./styles/styles.css"
     ]
 };
