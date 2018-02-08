@@ -23,7 +23,7 @@ module.exports = {
             "file": "./component/threshingfloor.js"
         },
         "template": {
-            "file": "./templates/ipinfo.hbs"
+            "file": "./template/ipinfo.hbs"
         }
     },
     "styles": [
