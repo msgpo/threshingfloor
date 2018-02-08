@@ -4,15 +4,15 @@
 
     <h3>Ports Scanned</h3>
     <div>
-        {{#each block.data.details.ports}}
-            <span class='port'>{{this.protocol}} {{this.port}}</span>
+        {{#each block.data.details.ports as |item|}}
+            <span class='port'>{{item.protocol}} {{item.port}}</span>
         {{/each}}
     </div>
     
     <h3>Associated Tags</h3>
     <div>
-        {{#each block.data.details.tags}}
-            <span class='tag'>{{this}}</span>
+        {{#each block.data.details.tags as |item|}}
+            <span class='tag'>{{item}}</span>
         {{/each}}
     </div>
 
