@@ -17,16 +17,5 @@ module.exports = {
             "description": "The location of the ThreshingFloor API used by your organization.",
             "adminOnly": true
         }
-    ],
-    "block": {
-        "component": {
-            "file": "./component/threshingfloor.js"
-        },
-        "template": {
-            "file": "./templates/ipinfo.hbs"
-        }
-    },
-    "styles": [
-        "./styles/style.css"
     ]
 };
