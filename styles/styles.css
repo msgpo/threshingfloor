@@ -1,40 +1,76 @@
-.container {
-    background-color: #bdbdbdff;
-    color: #434343;
-    font-family: Ubuntu, Arial;
-    padding: 4px;
-}
+    @font-face {
+        font-family: Kiona-Bold;
+        src: url(https://s3.amazonaws.com/static.threshingfloor.io/Kiona-Bold.ttf);
+    }
 
-.port {
-    margin-right: 8;
-    background-color: #d81b60;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 12px;
-    display: inline-block;
-    margin-bottom: 6px;
-}
+    @font-face {
+        font-family: Kimberly-Black;
+        src: url(https://s3.amazonaws.com/static.threshingfloor.io/Kimberly-Black.otf);
+    }
 
-.tag {
-    margin-right: 8;
-    background-color: #d81b60;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 12px;
-    display: inline-block;
-    margin-bottom: 6px;
-}
+    @font-face {
+        font-family: Open-Sans;
+        src: url(https://s3.amazonaws.com/static.threshingfloor.io/OpenSans-Regular.ttf);
+    }
 
-.heading {
-    margin-top: 2px;
-}
+    .green {
+        color: #CEFA45;
+    }
 
-.footer {
-    padding: 8px 0px;
-}
+    .threshing {
+        color: #F8FAFF;
+        font-family: Open-Sans, Ubuntu, Arial;
+        padding: 4px;
+        background: #1D252F;
+    }
 
-a {
-    color: #d81b60;
-    font-weight: bold;
-    text-decoration-color: white;
-}
+    .chip {
+        font-family: Kimberly-Black;
+        margin-right: 8;
+        background-color: #9A33F1;
+        padding: 3px;
+        border-radius: 3px;
+        font-size: 12px;
+        display: inline-block;
+        margin-bottom: 6px;
+        list-style: none;
+    }
+
+    .top {
+        margin-top: 2px;                
+    }
+
+    .heading {
+        font-family: Kiona-Bold;
+    }
+
+    .footer {
+        padding: 8px 0px;
+        overflow-wrap: break-word;
+    }
+
+    .sentence {
+      overflow-wrap: break-word;
+    }
+
+    a {
+        color: #CEFA45;
+        font-weight: bold;
+        text-decoration: none;
+        text-decoration-color: white;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        text-decoration-color: #CEFA45;
+    }
+
+    .logo {
+        max-width: 200px;
+        width: 100%;
+    }
+
+    .soundwave {
+        max-width: 300px;
+        width: 80%;
+    }

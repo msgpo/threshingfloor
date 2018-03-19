@@ -1,20 +1,28 @@
-<div class='container'>
-    <h3 class='heading'>{{block.data.details.ip}}</h3>
-    This IP address is known to have internet-wide scanning activity.
+<div class='threshing'>
+    <img src="https://s3.amazonaws.com/static.threshingfloor.io/threshingfloor_wordmark_transp_whitetext.png" class="logo">
 
+    <h3 class='heading green'>{{block.data.details.ip}}</h3>
+
+    <span class='sentence'>This IP address is known to have internet-wide scanning activity.</span>
+
+
+    {{#if block.data.details.ports}}
     <h3>Ports Scanned</h3>
     <div>
         {{#each block.data.details.ports as |item|}}
-            <span class='port'>{{item.protocol}} {{item.port}}</span>
+              <span class='chip'>{{item.protocol}} {{item.port}}</span>
         {{/each}}
     </div>
-    
+    {{/if}}
+
+    {{#if block.data.details.tags}}
     <h3>Associated Tags</h3>
     <div>
         {{#each block.data.details.tags as |item|}}
-            <span class='tag'>{{item}}</span>
+            <span class='chip'>{{item}}</span>
         {{/each}}
     </div>
+    {{/if}}
 
-    <div class="footer">For more information, visit <a href="https://threshingfloor.io/{{block.data.details.ip}}">https://threshingfloor.io/{{block.data.details.ip}}</a></div>
+    <div class="footer">For more information, visit <a href="https://threshingfloor.io/{{block.data.details.ip}}">https://threshingfloor.io</a></div>
 </div>
