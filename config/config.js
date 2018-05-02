@@ -9,12 +9,18 @@ module.exports = {
             "key": "apiKey",
             "name": "API Key",
             "description": "Your ThreshingFloor API key.",
+            "type": "text",
+            "default": "",
+            "userCanEdit": true,
             "adminOnly": true
         },
         {
             "key": "uri",
             "name": "ThreshingFloor Endpoint",
             "description": "The location of the ThreshingFloor API used by your organization.",
+            "type": "text",
+            "default": "",
+            "userCanEdit": true,
             "adminOnly": true
         }
     ],
